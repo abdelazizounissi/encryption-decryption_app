@@ -1,4 +1,3 @@
-```markdown
 # Cipher Toolkit — Simple Encryption Web App
 
 A small Flask web app that demonstrates text encryption and decryption using two classic educational ciphers:
