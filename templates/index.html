@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher Toolkit</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <h1 class="cipher-title"> Cipher <span class="accent-text">Toolkit</span></h1>
+        <p>Encrypt and decrypt your messages using classic cryptographic algorithms</p>
+        <p2> Choose between monoalphabetic and Caesar ciphers</p2>
+    </header>
+
+    <main>
+        <section class="io-section">
+            <div class="card">
+                <h2>Input Text</h2>
+                <p>Enter the text you want to encrypt or decrypt</p>
+                <textarea id="inputText" placeholder="Type your text here..."></textarea>
+            </div>
+
+            <div class="card">
+                <h2>Output Text</h2>
+                <p>Your encrypted or decrypted result</p>
+                <div id="outputText" class="output-box">Result will appear here...</div>
+            </div>
+        </section>
+
+        <section class="settings">
+            <div class="settings-bar card">
+                <h2>⚙️ Cipher Settings</h2>
+                <p>Configure your encryption parameters</p>
+                <div class="settings-controls">
+                    <div class="form-group">
+                        <label for="cipherType">Cipher Type</label>
+                        <select id="cipherType">
+                            <option value="monoalphabetic">Monoalphabetic</option>
+                            <option value="caesar">Caesar</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="actionType">Action</label>
+                        <select id="actionType">
+                            <option value="encrypt">Encrypt</option>
+                            <option value="decrypt">Decrypt</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="keyInput">Key (Caesar only)</label>
+                        <input type="number" id="keyInput" placeholder="Key (Caesar)" value="3">
+                    </div>
+                    <button onclick="processText()">Run Cipher</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="card">
+                <h2>Monoalphabetic Cipher</h2>
+                <p>A substitution cipher where each letter is replaced with another fixed letter. 
+                The same plaintext letter always encrypts to the same ciphertext letter.</p>
+            </div>
+
+            <div class="card">
+                <h2>Caesar Cipher</h2>
+                <p>A shift cipher where each letter is shifted by a fixed number of positions 
+                in the alphabet. Also known as a ROT cipher.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
