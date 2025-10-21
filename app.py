@@ -8,22 +8,30 @@ def mono_encryption(text):
     e = "wxehyztkcpjiuadglqmnrsfvbo"
     result = ""
     for ch in text.lower():
-        if ch in p:
-            result += e[p.index(ch)]
-        else:
-            result += ch
-    return result
+        found = False
+        for j in range(len(p)):
+            if p[j] == i:
+                res += e[j]
+                found = True
+                break
+        if not found:
+            res += i
+    return res
 
 def mono_decryption(text):
     p = "abcdefghijklmnopqrstuvwxyz"
     e = "wxehyztkcpjiuadglqmnrsfvbo"
     result = ""
     for ch in text.lower():
-        if ch in e:
-            result += p[e.index(ch)]
-        else:
-            result += ch
-    return result
+        found = False
+        for j in range(len(p)):
+            if e[j] == i:
+                res += p[j]
+                found = True
+                break
+        if not found:
+            res += i
+    return res
 
 def caesar_encryption(text, k):
     res = ""
