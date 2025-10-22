@@ -7,7 +7,10 @@ A small Flask web app that demonstrates text encryption and decryption using two
 
 This project is intended for learning and demonstration purposes only.
 
-<img width="1919" height="995" alt="Screenshot 2025-10-22 005052" src="https://github.com/user-attachments/assets/77bdcee7-9c49-453b-864a-56643dc6c833" />
+## App screenshot
+
+<img width="1919" height="975" alt="Screenshot 2025-10-22 010233" src="https://github.com/user-attachments/assets/3f511501-704d-491d-97f3-7ac63d5b98b7" />
+
 
 
 ## Features
