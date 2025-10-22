@@ -7,7 +7,8 @@ A small Flask web app that demonstrates text encryption and decryption using two
 
 This project is intended for learning and demonstration purposes only.
 
-![App screenshot](screenshot.png)
+![App screenshot](<img width="1919" height="995" alt="Screenshot 2025-10-22 005052" src="https://github.com/user-attachments/assets/77bdcee7-9c49-453b-864a-56643dc6c833" />)
+
 
 ## Features
 - Encrypt and decrypt text with Monoalphabetic or Caesar ciphers
@@ -81,4 +82,3 @@ Contributions welcome! Please open an issue or a pull request. Add tests for any
 
 ## License
 This project is open-source. Add a LICENSE file (e.g., MIT) to make the license explicit.
-```
